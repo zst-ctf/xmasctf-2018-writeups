@@ -1,0 +1,10 @@
+0 REA 1L −
+1 CLN 2L 4L
+2 CLN 5L 5R
+3 SND_2 4R −
+4 MUL 7L −
+5 MUL 8L −
+6 SND_3 7R −
+7 ADD 8R −
+8 ADD 9L −
+9 PRI

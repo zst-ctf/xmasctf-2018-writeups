@@ -1,0 +1,78 @@
+# Hanukkah
+Crypto
+
+## Challenge 
+
+	Most of the old religions celebrate Christmas in one way or another!
+
+	hannukah.zip
+
+	Author: Gabies
+
+## Solution
+
+Given public key, ciphertext and the source code...
+
+	ct = 66888784942083126019153811303159234927089875142104191133776750131159613684832139811204509826271372659492496969532819836891353636503721323922652625216288408158698171649305982910480306402937468863367546112783793370786163668258764837887181566893024918981141432949849964495587061024927468880779183895047695332465
+
+	pubkey = 577080346122592746450960451960811644036616146551114466727848435471345510503600476295033089858879506008659314011731832530327234404538741244932419600335200164601269385608667547863884257092161720382751699219503255979447796158029804610763137212345011761551677964560842758022253563721669200186956359020683979540809
+
+### Factorising primes
+
+It looks like an RSA challenge but with the following primes being calculated, where `r` is randomised
+
+	p =  3 * r**2 +  2 * r + 7331
+	q = 17 * r**2 + 18 * r + 1339
+	n = p * q
+
+Hence we can equate it to
+
+	p =  3r^2 + 2r + 7331
+	q = 17r^2 + 18r + 1339
+	n = 51r^4 + 88r^3 + 128680r^2 + 134636r + 9816209
+
+Since the value of `r` is of radomised `256-bits`, let's bruteforce using a step system.
+
+1. I started with a step of 2^255 and then did subtraction continuously.
+2. Subtraction is done continuously until the calculation of function `n(r)` is smaller than `pubkey`.
+3. Once it is too small, back track once and make the step size smaller (step of 2^254 is used)
+4. Continue until the exact number is found.
+
+Hence it will look something like this
+	
+	...
+	Greater 57998468644974352708871490365213079390068504521588799445473981772354729547808
+	Less 57998468644974352708871490365213079390068504521588799445473981772354729547800
+	>> Divide step
+	Greater 57998468644974352708871490365213079390068504521588799445473981772354729547808
+	Less 57998468644974352708871490365213079390068504521588799445473981772354729547804
+	>> Divide step
+	Greater 57998468644974352708871490365213079390068504521588799445473981772354729547808
+	Equal 57998468644974352708871490365213079390068504521588799445473981772354729547806
+
+	>> Found r = 57998468644974352708871490365213079390068504521588799445473981772354729547806
+	>> Found p = 10091467095486219386412925657038008994079750950818412327803970543226016138203830244281982855685318564926478052110051579561412412195187526673196657177343851
+	>> Found q = 57184980207755243189673245389882050966451922054637669857555833078280758116488758040722202677901531011185810382486226074211480927769032477693263422201893659
+
+
+### Rabin cryptosystem
+
+Assuming RSA at first, I did a mod-inverse of `(e, phi)` but it gives no solution and hence `d` cannot be calculated. 
+
+Looking at the encrypt() function carefully, I realised it cannot be RSA since the exponent is `e = 2`. For RSA, exponent must an be odd number
+
+Doing a lot of searching online, [I eventually found out it is Rabin cryptosystem](https://security.stackexchange.com/a/2357). 
+
+	def encrypt(m,pubkey):
+		c=m**2 % pubkey
+		return c
+
+From Wikipedia, we have a very good guide of how to do decryption. https://en.wikipedia.org/wiki/Rabin_cryptosystem#Decryption
+
+And thus, I put it all into a script to solve it...
+
+	b'X-MAS{H4nukk4h_Rabb1_and_Rab1n_l0ok_4nd_s0und_v3ry_much_alik3_H4nukk4h}XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+
+## Flag
+
+	X-MAS{H4nukk4h_Rabb1_and_Rab1n_l0ok_4nd_s0und_v3ry_much_alik3_H4nukk4h}

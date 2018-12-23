@@ -1,0 +1,65 @@
+ ; ================ B E G I N N I N G   O F   P R O C E D U R E ================
+
+        ; Variables:
+        ;    var_8: -8
+        ;    var_14: -20
+        ;    var_18: -24
+        ;    var_1C: -28
+
+0000000000400556         push       rbp                                         ; Begin of unwind block (FDE at 0x40089c), CODE XREF=sub_400556+72, sub_400556+113, sub_4005d6+87
+0000000000400557         mov        rbp, rsp
+000000000040055a         sub        rsp, 0x20
+000000000040055e         mov        dword [rbp+var_14], edi
+0000000000400561         mov        dword [rbp+var_18], esi
+0000000000400564         mov        dword [rbp+var_1C], edx
+0000000000400567         mov        qword [rbp+var_8], 0x0
+000000000040056f         mov        eax, dword [rbp+var_18]
+0000000000400572         cmp        eax, dword [rbp+var_14]
+0000000000400575         jne        loc_400586
+
+0000000000400577         mov        eax, dword [rbp+var_1C]
+000000000040057a         cmp        eax, dword [rbp+var_14]
+000000000040057d         jne        loc_400586
+
+000000000040057f         mov        eax, 0x1
+0000000000400584         jmp        loc_4005d4
+
+                     loc_400586:
+0000000000400586         mov        eax, dword [rbp+var_18]                     ; CODE XREF=sub_400556+31, sub_400556+39
+0000000000400589         cmp        eax, dword [rbp+var_14]
+000000000040058c         jge        loc_4005a7
+
+000000000040058e         mov        eax, dword [rbp+var_18]
+0000000000400591         lea        ecx, dword [rax+1]
+0000000000400594         mov        edx, dword [rbp+var_1C]                     ; argument #3 for method sub_400556
+0000000000400597         mov        eax, dword [rbp+var_14]
+000000000040059a         mov        esi, ecx                                    ; argument #2 for method sub_400556
+000000000040059c         mov        edi, eax                                    ; argument #1 for method sub_400556
+000000000040059e         call       sub_400556                                  ; sub_400556
+00000000004005a3         add        qword [rbp+var_8], rax
+
+                     loc_4005a7:
+00000000004005a7         mov        eax, dword [rbp+var_1C]                     ; CODE XREF=sub_400556+54
+00000000004005aa         cmp        eax, dword [rbp+var_14]
+00000000004005ad         jge        loc_4005d0
+
+00000000004005af         mov        eax, dword [rbp+var_1C]
+00000000004005b2         cmp        eax, dword [rbp+var_18]
+00000000004005b5         jge        loc_4005d0
+
+00000000004005b7         mov        eax, dword [rbp+var_1C]
+00000000004005ba         lea        edx, dword [rax+1]                          ; argument #3 for method sub_400556
+00000000004005bd         mov        ecx, dword [rbp+var_18]
+00000000004005c0         mov        eax, dword [rbp+var_14]
+00000000004005c3         mov        esi, ecx                                    ; argument #2 for method sub_400556
+00000000004005c5         mov        edi, eax                                    ; argument #1 for method sub_400556
+00000000004005c7         call       sub_400556                                  ; sub_400556
+00000000004005cc         add        qword [rbp+var_8], rax
+
+                     loc_4005d0:
+00000000004005d0         mov        rax, qword [rbp+var_8]                      ; CODE XREF=sub_400556+87, sub_400556+95
+
+                     loc_4005d4:
+00000000004005d4         leave                                                  ; CODE XREF=sub_400556+46
+00000000004005d5         ret
+                        ; endp

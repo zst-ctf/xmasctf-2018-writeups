@@ -1,0 +1,43 @@
+# python hash.py 
+ 1 1048577 2097153 3145729 4194305 5242881 6291457 7340033 8388609 9437185
+Done Lookup
+[+] Opening connection to 199.247.6.180 on port 18000: Done
+[*] >> Part 1
+[*] >> Part 2
+[*] 8498724717446693402
+>> 8498724717446693402 -> stealer0143482
+[*] 5179467343222558698
+>> 5179467343222558698 -> stealer2891879
+[*] 3997009164341724144
+>> 3997009164341724144 -> stealer5842683
+[*] -3398890386720728167
+>> -3398890386720728167 -> 7933065stealer
+[*] 1044459906496381611
+>> 1044459906496381611 -> stealer7485863
+[*] 392063530493951460
+>> 392063530493951460 -> stealer2604969
+[*] 6948372753156683248
+>> 6948372753156683248 -> stealer4750914
+[*] -4420620087454402904
+>> -4420620087454402904 -> 1604188stealer
+[*] 9120952392745262617
+>> 9120952392745262617 -> 9756309stealer
+[*] 5503541907758514327
+>> 5503541907758514327 -> 0735796stealer
+[*] Congrats! Moving to the next task...
+[*] >> Part 3
+[*] 3409852332615678
+[*] >> Part 4
+[*] >> Part 5
+[*] Switching to interactive mode
+ 
+Congrats! Moving to the next task... 
+
+We're finally here. Behind this door that you are unable to see are Santa's reindeers. Give me the password and we shall save the Christmas. 
+ https://pasteboard.co/HRyG0yE.png 
+You did it! You saved the Christmas! You may now go solve some more challenges. As promised, here is your flag:
+X-MAS{1_h4d_n0_id3a_th4t_you_c0uld_s4v3_th3_Chr1stm45}
+
+
+ Best of luck![*] Got EOF while reading in interactive
+$  

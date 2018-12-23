@@ -1,0 +1,65 @@
+$ python debug.py 
+Seed: 0x838276c2cb8e0d0e3c649d67L
+IV: 0x838276c2
+Key: 0xcb8e0d0e
+Mask: 0x3c649d67
+Index: 00 | Char: 0x58 | PRNG: 0x17 | Encrypt: 0x4f
+Index: 01 | Char: 0x2d | PRNG: 0x78 | Encrypt: 0x55
+Index: 02 | Char: 0x4d | PRNG: 0xcf | Encrypt: 0x82
+Index: 03 | Char: 0x41 | PRNG: 0x94 | Encrypt: 0xd5
+Index: 04 | Char: 0x53 | PRNG: 0x39 | Encrypt: 0x6a
+Index: 05 | Char: 0x7b | PRNG: 0xef | Encrypt: 0x94
+Index: 06 | Char: 0x74 | PRNG: 0x04 | Encrypt: 0x70
+Index: 07 | Char: 0x65 | PRNG: 0xf1 | Encrypt: 0x94
+Index: 08 | Char: 0x73 | PRNG: 0x8b | Encrypt: 0xf8
+Index: 09 | Char: 0x74 | PRNG: 0x36 | Encrypt: 0x42
+Index: 10 | Char: 0x5f | PRNG: 0xe8 | Encrypt: 0xb7
+Index: 11 | Char: 0x66 | PRNG: 0x07 | Encrypt: 0x61
+Index: 12 | Char: 0x6c | PRNG: 0x70 | Encrypt: 0x1c
+Index: 13 | Char: 0x61 | PRNG: 0x4b | Encrypt: 0x2a
+Index: 14 | Char: 0x67 | PRNG: 0xd6 | Encrypt: 0xb1
+Index: 15 | Char: 0x7d | PRNG: 0x18 | Encrypt: 0x65
+encrypted: 4f5582d56a947094f842b7611c2ab165
+prng_bytes: [23, 120, 207, 148, 57, 239, 4, 241, 139, 54, 232, 7, 112, 75, 214, 24]
+=======================================
+Length: 39
+Index: 00 | Encrypt: 0xab | Char: 0x58 | PRNG: 0xf3
+Index: 01 | Encrypt: 0x38 | Char: 0x2d | PRNG: 0x15
+Index: 02 | Encrypt: 0xab | Char: 0x4d | PRNG: 0xe6
+Index: 03 | Encrypt: 0xde | Char: 0x41 | PRNG: 0x9f
+Index: 04 | Encrypt: 0xf0 | Char: 0x53 | PRNG: 0xa3
+Index: 05 | Encrypt: 0x46 | Char: 0x7b | PRNG: 0x3d
+Index: 06 | Encrypt: 0x21 | Char: 0x00 | PRNG: 0x21
+Index: 07 | Encrypt: 0x61 | Char: 0x00 | PRNG: 0x61
+Index: 08 | Encrypt: 0x28 | Char: 0x00 | PRNG: 0x28
+Index: 09 | Encrypt: 0xf8 | Char: 0x00 | PRNG: 0xf8
+Index: 10 | Encrypt: 0xea | Char: 0x00 | PRNG: 0xea
+Index: 11 | Encrypt: 0x76 | Char: 0x00 | PRNG: 0x76
+Index: 12 | Encrypt: 0xcc | Char: 0x00 | PRNG: 0xcc
+Index: 13 | Encrypt: 0xfc | Char: 0x00 | PRNG: 0xfc
+Index: 14 | Encrypt: 0xd3 | Char: 0x00 | PRNG: 0xd3
+Index: 15 | Encrypt: 0x8a | Char: 0x00 | PRNG: 0x8a
+Index: 16 | Encrypt: 0x4a | Char: 0x00 | PRNG: 0x4a
+Index: 17 | Encrypt: 0x86 | Char: 0x00 | PRNG: 0x86
+Index: 18 | Encrypt: 0x49 | Char: 0x00 | PRNG: 0x49
+Index: 19 | Encrypt: 0x80 | Char: 0x00 | PRNG: 0x80
+Index: 20 | Encrypt: 0x2e | Char: 0x00 | PRNG: 0x2e
+Index: 21 | Encrypt: 0x95 | Char: 0x00 | PRNG: 0x95
+Index: 22 | Encrypt: 0xf8 | Char: 0x00 | PRNG: 0xf8
+Index: 23 | Encrypt: 0x17 | Char: 0x00 | PRNG: 0x17
+Index: 24 | Encrypt: 0xa2 | Char: 0x00 | PRNG: 0xa2
+Index: 25 | Encrypt: 0xfc | Char: 0x00 | PRNG: 0xfc
+Index: 26 | Encrypt: 0x94 | Char: 0x00 | PRNG: 0x94
+Index: 27 | Encrypt: 0x5d | Char: 0x00 | PRNG: 0x5d
+Index: 28 | Encrypt: 0xc0 | Char: 0x00 | PRNG: 0xc0
+Index: 29 | Encrypt: 0x4a | Char: 0x00 | PRNG: 0x4a
+Index: 30 | Encrypt: 0x96 | Char: 0x00 | PRNG: 0x96
+Index: 31 | Encrypt: 0x6d | Char: 0x00 | PRNG: 0x6d
+Index: 32 | Encrypt: 0x50 | Char: 0x00 | PRNG: 0x50
+Index: 33 | Encrypt: 0x2e | Char: 0x00 | PRNG: 0x2e
+Index: 34 | Encrypt: 0xf1 | Char: 0x00 | PRNG: 0xf1
+Index: 35 | Encrypt: 0xe3 | Char: 0x00 | PRNG: 0xe3
+Index: 36 | Encrypt: 0x1d | Char: 0x00 | PRNG: 0x1d
+Index: 37 | Encrypt: 0x0a | Char: 0x00 | PRNG: 0x0a
+Index: 38 | Encrypt: 0x2d | Char: 0x7d | PRNG: 0x50
+prng_bytes: [243, 21, 230, 159, 163, 61, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 80]
